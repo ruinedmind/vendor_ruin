@@ -6,10 +6,6 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/samsung/ruin-common
 
 PRODUCT_COPY_FILES += \
-    vendor/samsung/ruin-common/proprietary/system_ext/etc/permissions/audiosphere.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/audiosphere.xml \
-    vendor/samsung/ruin-common/proprietary/system_ext/lib64/libaptXHD_encoder.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libaptXHD_encoder.so \
-    vendor/samsung/ruin-common/proprietary/system_ext/lib64/libaptX_encoder.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libaptX_encoder.so \
-    vendor/samsung/ruin-common/proprietary/vendor/bin/ATFWD-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/ATFWD-daemon \
     vendor/samsung/ruin-common/proprietary/vendor/bin/adsprpcd:$(TARGET_COPY_OUT_VENDOR)/bin/adsprpcd \
     vendor/samsung/ruin-common/proprietary/vendor/bin/cnss-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/cnss-daemon \
     vendor/samsung/ruin-common/proprietary/vendor/bin/factory.ssc:$(TARGET_COPY_OUT_VENDOR)/bin/factory.ssc \
@@ -97,7 +93,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/ruin-common/proprietary/vendor/etc/plmn_se13.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_se13.bin \
     vendor/samsung/ruin-common/proprietary/vendor/etc/powerhint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.xml \
     vendor/samsung/ruin-common/proprietary/vendor/etc/sec_config_oem:$(TARGET_COPY_OUT_VENDOR)/etc/sec_config_oem \
-    vendor/samsung/ruin-common/proprietary/vendor/etc/seccomp_policy/atfwd@2.0.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/atfwd@2.0.policy \
     vendor/samsung/ruin-common/proprietary/vendor/etc/ssg/ta_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/ssg/ta_config.json \
     vendor/samsung/ruin-common/proprietary/vendor/etc/ssg/tz_whitelist.json:$(TARGET_COPY_OUT_VENDOR)/etc/ssg/tz_whitelist.json \
     vendor/samsung/ruin-common/proprietary/vendor/etc/str/str_preference_data.dat:$(TARGET_COPY_OUT_VENDOR)/etc/str/str_preference_data.dat \
@@ -130,25 +125,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/ruin-common/proprietary/vendor/lib/camera.device@3.3-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera.device@3.3-impl.so \
     vendor/samsung/ruin-common/proprietary/vendor/lib/camera.device@3.4-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera.device@3.4-impl.so \
     vendor/samsung/ruin-common/proprietary/vendor/lib/camera.device@3.5-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera.device@3.5-impl.so \
-    vendor/samsung/ruin-common/proprietary/vendor/lib/camera/com.samsung.sensor.gc5035.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.samsung.sensor.gc5035.so \
-    vendor/samsung/ruin-common/proprietary/vendor/lib/camera/com.samsung.sensor.s5k4ha.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.samsung.sensor.s5k4ha.so \
-    vendor/samsung/ruin-common/proprietary/vendor/lib/camera/com.samsung.sensor.s5kgd1.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.samsung.sensor.s5kgd1.so \
-    vendor/samsung/ruin-common/proprietary/vendor/lib/camera/com.samsung.sensor.s5kgd1_front.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.samsung.sensor.s5kgd1_front.so \
-    vendor/samsung/ruin-common/proprietary/vendor/lib/camera/com.samsung.sensormodule.0_lsi_s5kgd1_dv.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.samsung.sensormodule.0_lsi_s5kgd1_dv.bin \
-    vendor/samsung/ruin-common/proprietary/vendor/lib/camera/com.samsung.sensormodule.0_lsi_s5kgd1_pv_NEW.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.samsung.sensormodule.0_lsi_s5kgd1_pv_NEW.bin \
-    vendor/samsung/ruin-common/proprietary/vendor/lib/camera/com.samsung.sensormodule.0_lsi_s5kgd1_pv_OLD.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.samsung.sensormodule.0_lsi_s5kgd1_pv_OLD.bin \
-    vendor/samsung/ruin-common/proprietary/vendor/lib/camera/com.samsung.sensormodule.1_lsi_s5kgd1_front_dv.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.samsung.sensormodule.1_lsi_s5kgd1_front_dv.bin \
-    vendor/samsung/ruin-common/proprietary/vendor/lib/camera/com.samsung.sensormodule.1_lsi_s5kgd1_front_pv_NEW.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.samsung.sensormodule.1_lsi_s5kgd1_front_pv_NEW.bin \
-    vendor/samsung/ruin-common/proprietary/vendor/lib/camera/com.samsung.sensormodule.1_lsi_s5kgd1_front_pv_OLD.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.samsung.sensormodule.1_lsi_s5kgd1_front_pv_OLD.bin \
-    vendor/samsung/ruin-common/proprietary/vendor/lib/camera/com.samsung.sensormodule.2_lsi_s5k4ha.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.samsung.sensormodule.2_lsi_s5k4ha.bin \
-    vendor/samsung/ruin-common/proprietary/vendor/lib/camera/com.samsung.sensormodule.3_lsi_gc5035.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.samsung.sensormodule.3_lsi_gc5035.bin \
-    vendor/samsung/ruin-common/proprietary/vendor/lib/camera/com.samsung.sensormodule.8_lsi_s5kgd1_front_full_dv.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.samsung.sensormodule.8_lsi_s5kgd1_front_full_dv.bin \
-    vendor/samsung/ruin-common/proprietary/vendor/lib/camera/com.samsung.sensormodule.8_lsi_s5kgd1_front_full_pv_NEW.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.samsung.sensormodule.8_lsi_s5kgd1_front_full_pv_NEW.bin \
-    vendor/samsung/ruin-common/proprietary/vendor/lib/camera/com.samsung.sensormodule.8_lsi_s5kgd1_front_full_pv_OLD.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.samsung.sensormodule.8_lsi_s5kgd1_front_full_pv_OLD.bin \
-    vendor/samsung/ruin-common/proprietary/vendor/lib/camera/com.samsung.tuned.gc5035.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.samsung.tuned.gc5035.bin \
-    vendor/samsung/ruin-common/proprietary/vendor/lib/camera/com.samsung.tuned.s5k4ha.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.samsung.tuned.s5k4ha.bin \
-    vendor/samsung/ruin-common/proprietary/vendor/lib/camera/com.samsung.tuned.s5kgd1.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.samsung.tuned.s5kgd1.bin \
-    vendor/samsung/ruin-common/proprietary/vendor/lib/camera/com.samsung.tuned.s5kgd1_front.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.samsung.tuned.s5kgd1_front.bin \
     vendor/samsung/ruin-common/proprietary/vendor/lib/camera/components/com.qti.camx.chiiqutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.camx.chiiqutils.so \
     vendor/samsung/ruin-common/proprietary/vendor/lib/camera/components/com.qti.eisv2.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.eisv2.so \
     vendor/samsung/ruin-common/proprietary/vendor/lib/camera/components/com.qti.eisv3.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.eisv3.so \
@@ -227,7 +203,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/ruin-common/proprietary/vendor/lib/libC2D2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libC2D2.so \
     vendor/samsung/ruin-common/proprietary/vendor/lib/libCB.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCB.so \
     vendor/samsung/ruin-common/proprietary/vendor/lib/libDualCamBokehCapture.camera.samsung.so:$(TARGET_COPY_OUT_VENDOR)/lib/libDualCamBokehCapture.camera.samsung.so \
-    vendor/samsung/ruin-common/proprietary/vendor/lib/libFacePreProcessing.camera.samsung.so:$(TARGET_COPY_OUT_VENDOR)/lib/libFacePreProcessing.camera.samsung.so \
     vendor/samsung/ruin-common/proprietary/vendor/lib/libFlacSwDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libFlacSwDec.so \
     vendor/samsung/ruin-common/proprietary/vendor/lib/libGPTEE_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libGPTEE_vendor.so \
     vendor/samsung/ruin-common/proprietary/vendor/lib/libGPreqcancel.so:$(TARGET_COPY_OUT_VENDOR)/lib/libGPreqcancel.so \
@@ -256,7 +231,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/ruin-common/proprietary/vendor/lib/libQSEEComAPI.so:$(TARGET_COPY_OUT_VENDOR)/lib/libQSEEComAPI.so \
     vendor/samsung/ruin-common/proprietary/vendor/lib/libSecureUILib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libSecureUILib.so \
     vendor/samsung/ruin-common/proprietary/vendor/lib/libStDrvInt.so:$(TARGET_COPY_OUT_VENDOR)/lib/libStDrvInt.so \
-    vendor/samsung/ruin-common/proprietary/vendor/lib/lib_SamsungRec_07002.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib_SamsungRec_07002.so \
     vendor/samsung/ruin-common/proprietary/vendor/lib/lib_SoundAlive_3DPosition_ver202.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib_SoundAlive_3DPosition_ver202.so \
     vendor/samsung/ruin-common/proprietary/vendor/lib/lib_SoundAlive_AlbumArt_ver105.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib_SoundAlive_AlbumArt_ver105.so \
     vendor/samsung/ruin-common/proprietary/vendor/lib/lib_SoundAlive_SRC384_ver320.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib_SoundAlive_SRC384_ver320.so \
@@ -279,7 +253,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/ruin-common/proprietary/vendor/lib/libaudioconfigstore.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudioconfigstore.so \
     vendor/samsung/ruin-common/proprietary/vendor/lib/libaudioparsers.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudioparsers.so \
     vendor/samsung/ruin-common/proprietary/vendor/lib/libbatching.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbatching.so \
-    vendor/samsung/ruin-common/proprietary/vendor/lib/libc++_shared.so:$(TARGET_COPY_OUT_VENDOR)/lib/libc++_shared.so \
     vendor/samsung/ruin-common/proprietary/vendor/lib/libc2d30_bltlib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libc2d30_bltlib.so \
     vendor/samsung/ruin-common/proprietary/vendor/lib/libcamera_nn_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamera_nn_stub.so \
     vendor/samsung/ruin-common/proprietary/vendor/lib/libcamxfdalgov7.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamxfdalgov7.so \
@@ -402,10 +375,8 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/ruin-common/proprietary/vendor/lib/libqti_vndfwk_detect.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqti_vndfwk_detect.so \
     vendor/samsung/ruin-common/proprietary/vendor/lib/libqtigef.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqtigef.so \
     vendor/samsung/ruin-common/proprietary/vendor/lib/librecordalive.so:$(TARGET_COPY_OUT_VENDOR)/lib/librecordalive.so \
-    vendor/samsung/ruin-common/proprietary/vendor/lib/librilqmiservices-ext.so:$(TARGET_COPY_OUT_VENDOR)/lib/librilqmiservices-ext.so \
     vendor/samsung/ruin-common/proprietary/vendor/lib/librpmb.so:$(TARGET_COPY_OUT_VENDOR)/lib/librpmb.so \
     vendor/samsung/ruin-common/proprietary/vendor/lib/librs_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib/librs_adreno.so \
-    vendor/samsung/ruin-common/proprietary/vendor/lib/libsaiv_BeautySolutionVideo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsaiv_BeautySolutionVideo.so \
     vendor/samsung/ruin-common/proprietary/vendor/lib/libsamsungVoipResampler.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsamsungVoipResampler.so \
     vendor/samsung/ruin-common/proprietary/vendor/lib/libsdedrm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsdedrm.so \
     vendor/samsung/ruin-common/proprietary/vendor/lib/libsdm-color.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsdm-color.so \
@@ -415,11 +386,9 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/ruin-common/proprietary/vendor/lib/libsdmextension.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsdmextension.so \
     vendor/samsung/ruin-common/proprietary/vendor/lib/libsdmutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsdmutils.so \
     vendor/samsung/ruin-common/proprietary/vendor/lib/libsdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsdsprpc.so \
-    vendor/samsung/ruin-common/proprietary/vendor/lib/libsec_semRil.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsec_semRil.so \
     vendor/samsung/ruin-common/proprietary/vendor/lib/libsecaudiocoreutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsecaudiocoreutils.so \
     vendor/samsung/ruin-common/proprietary/vendor/lib/libsecaudioinfo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsecaudioinfo.so \
     vendor/samsung/ruin-common/proprietary/vendor/lib/libsecnativefeature.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsecnativefeature.so \
-    vendor/samsung/ruin-common/proprietary/vendor/lib/libsecril-client.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsecril-client.so \
     vendor/samsung/ruin-common/proprietary/vendor/lib/libsecureui.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsecureui.so \
     vendor/samsung/ruin-common/proprietary/vendor/lib/libsecureui_svcsock.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsecureui_svcsock.so \
     vendor/samsung/ruin-common/proprietary/vendor/lib/libsemnativecarrierfeature.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsemnativecarrierfeature.so \
@@ -510,10 +479,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/ruin-common/proprietary/vendor/lib/vendor.samsung.hardware.camera.provider@4.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.samsung.hardware.camera.provider@4.0.so \
     vendor/samsung/ruin-common/proprietary/vendor/lib/vendor.samsung.hardware.gnss@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.samsung.hardware.gnss@2.0.so \
     vendor/samsung/ruin-common/proprietary/vendor/lib/vendor.samsung.hardware.health@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.samsung.hardware.health@2.0.so \
-    vendor/samsung/ruin-common/proprietary/vendor/lib/vendor.samsung.hardware.hyper-V1-ndk_platform.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.samsung.hardware.hyper-V1-ndk_platform.so \
-    vendor/samsung/ruin-common/proprietary/vendor/lib/vendor.samsung.hardware.radio.bridge@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.samsung.hardware.radio.bridge@2.0.so \
-    vendor/samsung/ruin-common/proprietary/vendor/lib/vendor.samsung.hardware.radio@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.samsung.hardware.radio@2.0.so \
-    vendor/samsung/ruin-common/proprietary/vendor/lib/vendor.samsung.hardware.radio@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.samsung.hardware.radio@2.1.so \
     vendor/samsung/ruin-common/proprietary/vendor/lib64/android.hardware.camera.provider@2.4-legacy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.camera.provider@2.4-legacy.so \
     vendor/samsung/ruin-common/proprietary/vendor/lib64/android.hardware.camera.provider@2.5-legacy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.camera.provider@2.5-legacy.so \
     vendor/samsung/ruin-common/proprietary/vendor/lib64/camera.device@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera.device@1.0-impl.so \
@@ -521,25 +486,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/ruin-common/proprietary/vendor/lib64/camera.device@3.3-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera.device@3.3-impl.so \
     vendor/samsung/ruin-common/proprietary/vendor/lib64/camera.device@3.4-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera.device@3.4-impl.so \
     vendor/samsung/ruin-common/proprietary/vendor/lib64/camera.device@3.5-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera.device@3.5-impl.so \
-    vendor/samsung/ruin-common/proprietary/vendor/lib64/camera/com.samsung.sensor.gc5035.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.sensor.gc5035.so \
-    vendor/samsung/ruin-common/proprietary/vendor/lib64/camera/com.samsung.sensor.s5k4ha.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.sensor.s5k4ha.so \
-    vendor/samsung/ruin-common/proprietary/vendor/lib64/camera/com.samsung.sensor.s5kgd1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.sensor.s5kgd1.so \
-    vendor/samsung/ruin-common/proprietary/vendor/lib64/camera/com.samsung.sensor.s5kgd1_front.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.sensor.s5kgd1_front.so \
-    vendor/samsung/ruin-common/proprietary/vendor/lib64/camera/com.samsung.sensormodule.0_lsi_s5kgd1_dv.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.sensormodule.0_lsi_s5kgd1_dv.bin \
-    vendor/samsung/ruin-common/proprietary/vendor/lib64/camera/com.samsung.sensormodule.0_lsi_s5kgd1_pv_NEW.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.sensormodule.0_lsi_s5kgd1_pv_NEW.bin \
-    vendor/samsung/ruin-common/proprietary/vendor/lib64/camera/com.samsung.sensormodule.0_lsi_s5kgd1_pv_OLD.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.sensormodule.0_lsi_s5kgd1_pv_OLD.bin \
-    vendor/samsung/ruin-common/proprietary/vendor/lib64/camera/com.samsung.sensormodule.1_lsi_s5kgd1_front_dv.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.sensormodule.1_lsi_s5kgd1_front_dv.bin \
-    vendor/samsung/ruin-common/proprietary/vendor/lib64/camera/com.samsung.sensormodule.1_lsi_s5kgd1_front_pv_NEW.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.sensormodule.1_lsi_s5kgd1_front_pv_NEW.bin \
-    vendor/samsung/ruin-common/proprietary/vendor/lib64/camera/com.samsung.sensormodule.1_lsi_s5kgd1_front_pv_OLD.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.sensormodule.1_lsi_s5kgd1_front_pv_OLD.bin \
-    vendor/samsung/ruin-common/proprietary/vendor/lib64/camera/com.samsung.sensormodule.2_lsi_s5k4ha.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.sensormodule.2_lsi_s5k4ha.bin \
-    vendor/samsung/ruin-common/proprietary/vendor/lib64/camera/com.samsung.sensormodule.3_lsi_gc5035.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.sensormodule.3_lsi_gc5035.bin \
-    vendor/samsung/ruin-common/proprietary/vendor/lib64/camera/com.samsung.sensormodule.8_lsi_s5kgd1_front_full_dv.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.sensormodule.8_lsi_s5kgd1_front_full_dv.bin \
-    vendor/samsung/ruin-common/proprietary/vendor/lib64/camera/com.samsung.sensormodule.8_lsi_s5kgd1_front_full_pv_NEW.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.sensormodule.8_lsi_s5kgd1_front_full_pv_NEW.bin \
-    vendor/samsung/ruin-common/proprietary/vendor/lib64/camera/com.samsung.sensormodule.8_lsi_s5kgd1_front_full_pv_OLD.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.sensormodule.8_lsi_s5kgd1_front_full_pv_OLD.bin \
-    vendor/samsung/ruin-common/proprietary/vendor/lib64/camera/com.samsung.tuned.gc5035.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.tuned.gc5035.bin \
-    vendor/samsung/ruin-common/proprietary/vendor/lib64/camera/com.samsung.tuned.s5k4ha.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.tuned.s5k4ha.bin \
-    vendor/samsung/ruin-common/proprietary/vendor/lib64/camera/com.samsung.tuned.s5kgd1.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.tuned.s5kgd1.bin \
-    vendor/samsung/ruin-common/proprietary/vendor/lib64/camera/com.samsung.tuned.s5kgd1_front.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.tuned.s5kgd1_front.bin \
     vendor/samsung/ruin-common/proprietary/vendor/lib64/camera/components/com.qti.camx.chiiqutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.camx.chiiqutils.so \
     vendor/samsung/ruin-common/proprietary/vendor/lib64/camera/components/com.qti.eisv2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.eisv2.so \
     vendor/samsung/ruin-common/proprietary/vendor/lib64/camera/components/com.qti.eisv3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.eisv3.so \
@@ -604,8 +550,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/ruin-common/proprietary/vendor/lib64/libCB.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCB.so \
     vendor/samsung/ruin-common/proprietary/vendor/lib64/libDLInterface.camera.samsung.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libDLInterface.camera.samsung.so \
     vendor/samsung/ruin-common/proprietary/vendor/lib64/libDualCamBokehCapture.camera.samsung.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libDualCamBokehCapture.camera.samsung.so \
-    vendor/samsung/ruin-common/proprietary/vendor/lib64/libFacePreProcessing.camera.samsung.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libFacePreProcessing.camera.samsung.so \
-    vendor/samsung/ruin-common/proprietary/vendor/lib64/libFacialStickerEngine.arcsoft.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libFacialStickerEngine.arcsoft.so \
     vendor/samsung/ruin-common/proprietary/vendor/lib64/libFlacSwDec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libFlacSwDec.so \
     vendor/samsung/ruin-common/proprietary/vendor/lib64/libGPTEE_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libGPTEE_vendor.so \
     vendor/samsung/ruin-common/proprietary/vendor/lib64/libGPreqcancel.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libGPreqcancel.so \
@@ -653,7 +597,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/ruin-common/proprietary/vendor/lib64/libaudioconfigstore.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudioconfigstore.so \
     vendor/samsung/ruin-common/proprietary/vendor/lib64/libaudioparsers.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudioparsers.so \
     vendor/samsung/ruin-common/proprietary/vendor/lib64/libbatching.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbatching.so \
-    vendor/samsung/ruin-common/proprietary/vendor/lib64/libc++_shared.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libc++_shared.so \
     vendor/samsung/ruin-common/proprietary/vendor/lib64/libc2d30_bltlib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libc2d30_bltlib.so \
     vendor/samsung/ruin-common/proprietary/vendor/lib64/libcamera_nn_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamera_nn_stub.so \
     vendor/samsung/ruin-common/proprietary/vendor/lib64/libcamxfdalgov7.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxfdalgov7.so \
@@ -743,7 +686,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/ruin-common/proprietary/vendor/lib64/liblocationservice_glue.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblocationservice_glue.so \
     vendor/samsung/ruin-common/proprietary/vendor/lib64/liblow_light_hdr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblow_light_hdr.so \
     vendor/samsung/ruin-common/proprietary/vendor/lib64/liblowi_client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblowi_client.so \
-    vendor/samsung/ruin-common/proprietary/vendor/lib64/liblqe.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblqe.so \
     vendor/samsung/ruin-common/proprietary/vendor/lib64/libmdmdetect.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmdmdetect.so \
     vendor/samsung/ruin-common/proprietary/vendor/lib64/libmdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmdsprpc.so \
     vendor/samsung/ruin-common/proprietary/vendor/lib64/libmeters.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmeters.so \
@@ -793,7 +735,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/ruin-common/proprietary/vendor/lib64/libreffeature.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libreffeature.so \
     vendor/samsung/ruin-common/proprietary/vendor/lib64/libremosaic_daemon.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libremosaic_daemon.so \
     vendor/samsung/ruin-common/proprietary/vendor/lib64/libremosaiclib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libremosaiclib.so \
-    vendor/samsung/ruin-common/proprietary/vendor/lib64/librilqmiservices-ext.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librilqmiservices-ext.so \
     vendor/samsung/ruin-common/proprietary/vendor/lib64/librpmb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librpmb.so \
     vendor/samsung/ruin-common/proprietary/vendor/lib64/librs_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librs_adreno.so \
     vendor/samsung/ruin-common/proprietary/vendor/lib64/libsdedrm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdedrm.so \
@@ -804,13 +745,10 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/ruin-common/proprietary/vendor/lib64/libsdmextension.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdmextension.so \
     vendor/samsung/ruin-common/proprietary/vendor/lib64/libsdmutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdmutils.so \
     vendor/samsung/ruin-common/proprietary/vendor/lib64/libsdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdsprpc.so \
-    vendor/samsung/ruin-common/proprietary/vendor/lib64/libsec-ril-dsds.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsec-ril-dsds.so \
     vendor/samsung/ruin-common/proprietary/vendor/lib64/libsec-ril.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsec-ril.so \
-    vendor/samsung/ruin-common/proprietary/vendor/lib64/libsec_semRil.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsec_semRil.so \
     vendor/samsung/ruin-common/proprietary/vendor/lib64/libsecaudiocoreutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsecaudiocoreutils.so \
     vendor/samsung/ruin-common/proprietary/vendor/lib64/libsecaudioinfo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsecaudioinfo.so \
     vendor/samsung/ruin-common/proprietary/vendor/lib64/libsecnativefeature.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsecnativefeature.so \
-    vendor/samsung/ruin-common/proprietary/vendor/lib64/libsecril-client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsecril-client.so \
     vendor/samsung/ruin-common/proprietary/vendor/lib64/libsecureui.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsecureui.so \
     vendor/samsung/ruin-common/proprietary/vendor/lib64/libsecureui_svcsock.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsecureui_svcsock.so \
     vendor/samsung/ruin-common/proprietary/vendor/lib64/libsemnativecarrierfeature.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsemnativecarrierfeature.so \
@@ -886,7 +824,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/ruin-common/proprietary/vendor/lib64/vendor.qti.hardware.display.mapperextensions@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.display.mapperextensions@1.1.so \
     vendor/samsung/ruin-common/proprietary/vendor/lib64/vendor.qti.hardware.dsp@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.dsp@1.0.so \
     vendor/samsung/ruin-common/proprietary/vendor/lib64/vendor.qti.hardware.qseecom@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.qseecom@1.0.so \
-    vendor/samsung/ruin-common/proprietary/vendor/lib64/vendor.qti.hardware.radio.atcmdfwd@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.atcmdfwd@1.0.so \
     vendor/samsung/ruin-common/proprietary/vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.tui_comm@1.0.so \
     vendor/samsung/ruin-common/proprietary/vendor/lib64/vendor.qti.hardware.vpp@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.vpp@1.1.so \
     vendor/samsung/ruin-common/proprietary/vendor/lib64/vendor.qti.hardware.vpp@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.vpp@1.2.so \
@@ -902,12 +839,8 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/ruin-common/proprietary/vendor/lib64/vendor.samsung.hardware.camera.provider@4.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.camera.provider@4.0.so \
     vendor/samsung/ruin-common/proprietary/vendor/lib64/vendor.samsung.hardware.gnss@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.gnss@2.0.so \
     vendor/samsung/ruin-common/proprietary/vendor/lib64/vendor.samsung.hardware.health@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.health@2.0.so \
-    vendor/samsung/ruin-common/proprietary/vendor/lib64/vendor.samsung.hardware.hyper-V1-ndk_platform.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.hyper-V1-ndk_platform.so \
     vendor/samsung/ruin-common/proprietary/vendor/lib64/vendor.samsung.hardware.miscpower@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.miscpower@2.0.so \
-    vendor/samsung/ruin-common/proprietary/vendor/lib64/vendor.samsung.hardware.radio.bridge@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.radio.bridge@2.0.so \
     vendor/samsung/ruin-common/proprietary/vendor/lib64/vendor.samsung.hardware.radio.channel@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.radio.channel@2.0.so \
-    vendor/samsung/ruin-common/proprietary/vendor/lib64/vendor.samsung.hardware.radio@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.radio@2.0.so \
-    vendor/samsung/ruin-common/proprietary/vendor/lib64/vendor.samsung.hardware.radio@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.radio@2.1.so \
     vendor/samsung/ruin-common/proprietary/vendor/lib64/vendor.samsung.hardware.security.widevine.keyprov@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.security.widevine.keyprov@1.0.so \
     vendor/samsung/ruin-common/proprietary/vendor/lib64/vendor.samsung.hardware.thermal@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.thermal@1.0.so
 
